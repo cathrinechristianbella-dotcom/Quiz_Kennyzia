@@ -1,0 +1,78 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --pink: #ff6fb9;
+    --kuning: #ffe55e;
+    --biru: #6ecbff;
+    --ungu: #d8b4ff;
+    --hitam: #222;
+}
+.navbar {
+    background: linear-gradient(90deg, var(--pink), var(--kuning), var(--biru));
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    color: var(--hitam);
+}
+.container {
+    padding: 55px;
+    text-align: center;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+    gap: 30px;
+    margin-top: 25px;
+}
+.product-card {
+    background: rgb(171, 213, 255);
+    border-radius: 18px;
+    padding: 5px;
+    box-shadow: 0 10px 20px rgba(0,0)
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background-image: url('popmart.jpeg');
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+
